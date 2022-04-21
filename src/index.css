@@ -6,17 +6,13 @@
 
 @layer base {
   *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    @apply box-border;
     font-family: 'Roboto', sans-serif;
-  }
-  p,li, h1,h2,h3 {
     @apply text-slate-700;
   }
 
   li {
-    cursor: pointer;
+    @apply cursor-pointer;
   }
 
   li:hover {
@@ -30,6 +26,6 @@
 
 @layer components {
   .container {
-    padding: 60px 7rem;
+    @apply py-[60px] px-28;
   }
 }
