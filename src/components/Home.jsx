@@ -4,13 +4,15 @@ import businessImg2 from "../assets/meeting-concept.jpg";
 
 const Home = () => {
   return (
-    <div className="py-36">
-      <h1 className="text-5xl font-bold">
+    <div className="container sm:p-16 py-36">
+      <h1 className=" font-bold">
         A strategic approach to website design <br /> and development
       </h1>
-      <div className="my-36 grid grid-cols-2 grid-rows-2 gap-24">
+
+      {/* Overview */}
+      <div className="mt-44 grid grid-cols-2 grid-rows-2 gap-x-24 gap-y-40 items-center md:flex md:flex-col">
         <div>
-          <h2 className="text-4xl mb-4">
+          <h2 className="mb-4">
             Solving varying problems with technological solutions
           </h2>
           <p>
@@ -24,10 +26,22 @@ const Home = () => {
             Learn more
           </button>
         </div>
-        <img src={businessImg1} alt="businessman" />
-        <img src={businessImg2} alt="designer" />
+        <div className="w-full h-96 relative bg-slate-100 p-6 ">
+          <img
+            src={businessImg1}
+            alt="businessman"
+            className="absolute top-[-80px] left-[-40px] h-96 "
+          />
+        </div>
+        <div className="w-full h-96 relative bg-slate-100 p-6 ">
+          <img
+            src={businessImg2}
+            alt="designer"
+            className="absolute top-[-80px] right-[-40px] h-96"
+          />
+        </div>
         <div>
-          <h2 className="text-4xl mb-4">
+          <h2 className="mb-4">
             Designing success through creative web design
           </h2>
           <p>

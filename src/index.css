@@ -4,11 +4,21 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+/* -------- BASE ------------ */
 @layer base {
   *{
     @apply box-border;
     font-family: 'Roboto', sans-serif;
     @apply text-slate-700;
+    @apply scroll-smooth
+  }
+
+  h1 {
+    @apply text-5xl;
+  }
+
+  h2 {
+    @apply text-4xl;
   }
 
   li {
@@ -21,11 +31,17 @@
 
   button {
     @apply rounded-md px-3 py-2;
-  }
+  } 
 }
 
+/* -------- COMPONENTS ------------ */
 @layer components {
   .container {
     @apply py-[60px] px-28;
   }
+  .card {
+    @apply w-96 drop-shadow-md rounded-md p-4 m-8 bg-white;
+  }
 }
+
+/* -------- COMPONENTS ------------ */
