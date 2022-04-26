@@ -1,6 +1,6 @@
 import React from "react";
-import businessImg1 from "../assets/businessman-working-stylus-pen-and-digital.jpg";
-import businessImg2 from "../assets/meeting-concept.jpg";
+import businessImg1 from "../assets/img/businessman-working-stylus-pen-and-digital.jpg";
+import businessImg2 from "../assets/img/meeting-concept.jpg";
 
 const Home = () => {
   return (

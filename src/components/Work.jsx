@@ -18,19 +18,19 @@ const Work = () => {
 
       {/* Cards */}
       <div className="flex justify-evenly items-center w-full p-8 h-auto my-16 md:flex-col sm:p-0 sm:m-0">
-        <div className="card cursor-pointer transition-all hover:scale-150">
+        <div className="card cursor-pointer transition-all hover:scale-125">
           <img src={workimg1} alt="works" className="w-full mb-2" />
           <p className="text-slate-400 text-xs">Corporate Web Design</p>
         </div>
-        <div className="card cursor-pointer transition-all hover:scale-150">
+        <div className="card cursor-pointer transition-all hover:scale-125">
           <img src={workimg2} alt="works" className="w-full mb-2" />
           <p className="text-slate-400 text-xs">E-commerce</p>
         </div>
-        <div className="card cursor-pointer transition-all hover:scale-150">
+        <div className="card cursor-pointer transition-all hover:scale-125">
           <img src={workimg3} alt="works" className="w-full mb-2" />
           <p className="text-slate-400 text-xs">Business</p>
         </div>
-        <div className="card cursor-pointer transition-all hover:scale-150">
+        <div className="card cursor-pointer transition-all hover:scale-125">
           <img src={workimg4} alt="works" className="w-full mb-2" />
           <p className="text-slate-400 text-xs">Branding</p>
         </div>
