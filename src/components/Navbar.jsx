@@ -34,9 +34,11 @@ const Navbar = () => {
           <li className="mx-5">
             <a href="#aboutus">About us</a>
           </li>
-          <button className="mx-5 cursor-pointer bg-slate-500 text-white hover:bg-slate-600">
-            Get Started
-          </button>
+          <a
+            href="#contact"
+            className="rounded-md px-3 py-2 mx-5 cursor-pointer bg-slate-500 text-white hover:bg-slate-600">
+            Interested
+          </a>
         </ul>
 
         {!toggleMenu ? (
@@ -59,22 +61,23 @@ const Navbar = () => {
               : " bg-white absolute drop-shadow-md top-0 left-0 w-full h-screen flex flex-col justify-evenly items-center py-4"
           }>
           <li className="my-4" onClick={() => setToggleMenu(false)}>
-            Work
+            <a href="#work">Work</a>
           </li>
           <li className="my-4" onClick={() => setToggleMenu(false)}>
-            Services
+            <a href="#services">Services</a>
           </li>
           <li className="my-4" onClick={() => setToggleMenu(false)}>
-            Insights
+            <a href="#insights">Insights</a>
           </li>
           <li className="my-4" onClick={() => setToggleMenu(false)}>
-            About us
+            <a href="#aboutus">About us</a>
           </li>
-          <button
-            className="my-5 cursor-pointer bg-slate-500 text-white hover:bg-slate-600"
+          <a
+            href="#contact"
+            className="rounded-md px-3 py-2 mx-5 cursor-pointer bg-slate-500 text-white hover:bg-slate-600"
             onClick={() => setToggleMenu(false)}>
-            Get Started
-          </button>
+            Interested
+          </a>
         </ul>
       </nav>
     </div>
