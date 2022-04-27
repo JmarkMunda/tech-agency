@@ -11,12 +11,12 @@ const Work = () => {
   return (
     <div
       id="works"
-      className="py-20 px-28 sm:p-16 text-center bg-slate-100 p-6 ">
+      className="py-24 px-28 sm:p-16 text-center bg-slate-100 p-6 ">
       <h1>
         As promised, we’re the most professional website designing company.
       </h1>
 
-      {/* Cards */}
+      {/* ---------------- Cards------------ */}
       <div className="flex justify-evenly items-center w-full p-8 h-auto my-16 md:flex-col sm:p-0 sm:m-0">
         <div className="card cursor-pointer transition-all hover:scale-125">
           <img src={workimg1} alt="works" className="w-full mb-2" />
@@ -36,7 +36,7 @@ const Work = () => {
         </div>
       </div>
 
-      {/* Feedback */}
+      {/*---------------- Feedback---------------- */}
       <div className="container">
         <div className="border-l-4 mr-8 border-slate-400">
           <p className="p-6 text-justify">

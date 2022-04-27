@@ -9,8 +9,8 @@ const Home = () => {
         A strategic approach to website design <br /> and development
       </h1>
 
-      {/* Overview */}
-      <div className="mt-44 grid grid-cols-2 grid-rows-2 gap-x-24 gap-y-40 items-center md:flex md:flex-col">
+      {/*---------- Overview -------------*/}
+      <div className="mt-44 grid grid-cols-2 grid-rows-2 gap-40 items-center md:flex md:flex-col">
         <div>
           <h2 className="mb-4">
             Solving varying problems with technological solutions

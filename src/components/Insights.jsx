@@ -1,28 +1,53 @@
 import React from "react";
 import insightsCover from "../assets/img/hipster-hand-using-digital-tablet-docking-keyboard.jpg";
+import { FiCheckCircle } from "react-icons/fi";
 
 const Insights = () => {
   return (
     <div id="insights" className="container">
-      <h1 className="text-center my-16">What Does Tech Agency Do?</h1>
-      {/* content-container */}
-      <div className="grid grid-cols-2 gap-x-4">
-        <div>
-          <h3>Website design agency that delivers exactly what you need</h3>
-          {/* <h2>We work with our clients to achieve success</h2> */}
-          <div className="flex my-3">
-            <span className="mx-2">- </span>
-            <p>
-              Our web design services are all about delivering results that make
-              an impact on your business.
-              <br />
-              See how we achieve our clients’ online goals through innovative
-              website design.
-            </p>
+      <h1 className="text-right w-auto my-16 ">
+        <span className="bg-slate-100">What Should You Expect?</span>
+      </h1>
+      {/*-------- content-container--------- */}
+      <div className="grid grid-cols-2 gap-x-40 items-center ">
+        {/*------= insights-cover-image----------- */}
+        <>
+          <img src={insightsCover} alt="Insights Cover" className="h-96 " />
+        </>
+        {/* ---------list of texts---------- */}
+        <div className="flex flex-col justify-evenly h-full">
+          <div className="flex items-center">
+            <FiCheckCircle />
+            <p className="text-lg ml-2">Fully Functional Websites</p>
           </div>
-        </div>
-        <div>
-          <img src={insightsCover} alt="Insights Cover" className="h-96" />
+          <div className="flex items-center">
+            <FiCheckCircle />
+            <p className="text-lg ml-2">Multi-Platform Experience</p>
+          </div>
+          <div className="flex items-center">
+            <FiCheckCircle />
+            <p className="text-lg ml-2">Responsive and Elegant Designs</p>
+          </div>
+          <div className="flex items-center">
+            <FiCheckCircle />
+            <p className="text-lg ml-2">Easy to Use</p>
+          </div>
+          <div className="flex items-center">
+            <FiCheckCircle />
+            <p className="text-lg ml-2">Optimize for Search and Social web</p>
+          </div>
+          <div className="flex items-center">
+            <FiCheckCircle />
+            <p className="text-lg ml-2">Information Accessibility</p>
+          </div>
+          <div className="flex items-center">
+            <FiCheckCircle />
+            <p className="text-lg ml-2">Secured Website</p>
+          </div>
+          <div className="flex items-center">
+            <FiCheckCircle />
+            <p className="text-lg ml-2">On Track and On Budget</p>
+          </div>
         </div>
       </div>
     </div>

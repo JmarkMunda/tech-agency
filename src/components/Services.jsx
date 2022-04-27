@@ -4,6 +4,7 @@ const Services = () => {
   return (
     <div id="services" className="container">
       <h1 className="text-center my-14">Services We Can Offer</h1>
+      {/* --------------- services-content ---------------*/}
       <div className="grid grid-cols-3 grid-rows-2 gap-y-16 gap-x-4">
         <div>
           <img
@@ -37,7 +38,7 @@ const Services = () => {
             src="https://img.icons8.com/external-soft-fill-juicy-fish/60/000000/external-protective-internet-security-soft-fill-soft-fill-juicy-fish.png"
           />
           <p className="text-center my-4 font-bold text-lg">
-            Web application firewall
+            Web Application Firewall
           </p>
           <p className="text-center text-sm">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.

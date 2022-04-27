@@ -51,7 +51,7 @@ const Navbar = () => {
           />
         )}
 
-        {/* Mobile Menu */}
+        {/*---------- Mobile Menu ----------- */}
         <ul
           className={
             !toggleMenu
