@@ -2,11 +2,11 @@ import React from "react";
 
 const Services = () => {
   return (
-    <div id="services" className="container">
+    <div id="services" className="container sm:p-8">
       <h1 className="text-center my-14">Services We Can Offer</h1>
 
       {/* --------------- services-content ---------------*/}
-      <div className="grid grid-cols-3 grid-rows-2 gap-y-16 gap-x-4">
+      <div className="grid grid-cols-3 grid-rows-2 gap-y-16 gap-x-4 md:grid-cols-2 sm:grid-cols-1">
         <div>
           <img
             className="m-auto"

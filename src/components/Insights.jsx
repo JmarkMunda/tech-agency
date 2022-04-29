@@ -4,15 +4,19 @@ import { FiCheckCircle } from "react-icons/fi";
 
 const Insights = () => {
   return (
-    <div id="insights" className="container">
+    <div id="insights" className="container sm:p-8">
       <h1 className="text-right w-auto my-16 ">
         <span className="bg-slate-100">What Should You Expect?</span>
       </h1>
       {/*-------- content-container--------- */}
-      <div className="grid grid-cols-2 gap-x-40 items-center ">
+      <div className="grid grid-cols-2 gap-x-40 items-center md:grid-cols-1">
         {/*------= insights-cover-image----------- */}
         <>
-          <img src={insightsCover} alt="Insights Cover" className="h-96 " />
+          <img
+            src={insightsCover}
+            alt="Insights Cover"
+            className="h-96 md:hidden"
+          />
         </>
         {/* ---------list of texts---------- */}
         <div className="flex flex-col justify-evenly h-full">

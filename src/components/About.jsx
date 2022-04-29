@@ -3,11 +3,11 @@ import teamPhoto from "../assets/img/aboutus.jpg";
 
 const About = () => {
   return (
-    <div id="aboutus" className="container">
+    <div id="aboutus" className="container md:p-16">
       <h1 className="my-16">
         <span className="bg-slate-100">About Us</span>
       </h1>
-      <div className="grid grid-cols-2 gap-x-40">
+      <div className="grid grid-cols-2 gap-x-40 md:grid-cols-1">
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta
           repellat, accusantium quia similique debitis unde! Temporibus id
@@ -22,7 +22,7 @@ const About = () => {
           quo, illo ea temporibus animi autem ipsam illum nostrum sapiente
           placeat cupiditate vel molestias.
         </p>
-        <img src={teamPhoto} alt="Team Photo" className="h-96" />
+        <img src={teamPhoto} alt="Team Photo" className="h-96 md:hidden" />
       </div>
     </div>
   );

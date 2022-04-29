@@ -4,7 +4,7 @@ import businessImg2 from "../assets/img/meeting-concept.jpg";
 
 const Home = () => {
   return (
-    <div className="container sm:p-16 py-36">
+    <div className="container sm:px-8 sm:py-20 py-36">
       <h1 className=" font-bold">
         A strategic approach to website design <br /> and development
       </h1>
@@ -26,14 +26,14 @@ const Home = () => {
             Learn more
           </button>
         </div>
-        <div className="w-full h-96 relative bg-slate-100 p-6 ">
+        <div className="w-full h-96 relative bg-slate-100 p-6 md:hidden">
           <img
             src={businessImg1}
             alt="businessman"
             className="absolute top-[-80px] left-[-40px] h-96 "
           />
         </div>
-        <div className="w-full h-96 relative bg-slate-100 p-6 ">
+        <div className="w-full h-96 relative bg-slate-100 p-6 md:hidden">
           <img
             src={businessImg2}
             alt="designer"

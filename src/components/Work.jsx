@@ -11,34 +11,34 @@ const Work = () => {
   return (
     <div
       id="works"
-      className="py-24 px-28 sm:p-16 text-center bg-slate-100 p-6 ">
+      className="py-24 px-28 sm:p-8 text-center bg-slate-100 p-6 ">
       <h1>
         As promised, we’re the most professional website designing company.
       </h1>
 
       {/* ---------------- Cards------------ */}
-      <div className="flex justify-evenly items-center w-full p-8 h-auto my-16 md:flex-col sm:p-0 sm:m-0">
-        <div className="card cursor-pointer transition-all hover:scale-125">
-          <img src={workimg1} alt="works" className="w-full mb-2" />
+      <div className="flex justify-evenly items-center w-full p-8 h-auto my-16 lg:flex-col sm:p-0 sm:m-0">
+        <div className="card cursor-pointer transition-all hover:scale-125 md:hover:scale-105">
+          <img src={workimg1} alt="works" className="max-w-full mb-2" />
           <p className="text-slate-400 text-xs">Corporate Web Design</p>
         </div>
-        <div className="card cursor-pointer transition-all hover:scale-125">
-          <img src={workimg2} alt="works" className="w-full mb-2" />
+        <div className="card cursor-pointer transition-all hover:scale-125 md:hover:scale-105">
+          <img src={workimg2} alt="works" className="max-w-full mb-2" />
           <p className="text-slate-400 text-xs">E-commerce</p>
         </div>
-        <div className="card cursor-pointer transition-all hover:scale-125">
-          <img src={workimg3} alt="works" className="w-full mb-2" />
+        <div className="card cursor-pointer transition-all hover:scale-125 md:hover:scale-105">
+          <img src={workimg3} alt="works" className="max-w-full mb-2" />
           <p className="text-slate-400 text-xs">Business</p>
         </div>
-        <div className="card cursor-pointer transition-all hover:scale-125">
-          <img src={workimg4} alt="works" className="w-full mb-2" />
+        <div className="card cursor-pointer transition-all hover:scale-125 md:hover:scale-105">
+          <img src={workimg4} alt="works" className="max-w-full mb-2" />
           <p className="text-slate-400 text-xs">Branding</p>
         </div>
       </div>
 
       {/*---------------- Feedback---------------- */}
-      <div className="container">
-        <div className="border-l-4 mr-8 border-slate-400">
+      <div className="container md:p-8">
+        <div className="border-l-4 pl-8 sm:pl-4 border-slate-400">
           <p className="p-6 text-justify">
             <span>&ldquo;</span>Lorem ipsum dolor sit amet consectetur
             adipisicing elit. Minus optio cum dolor reprehenderit. Ipsa vero
@@ -55,7 +55,7 @@ const Work = () => {
             <FaStar className="fill-yellow-500" />
             <FaStar className="fill-yellow-500" />
           </div>
-          <div className="flex items-center py-4 px-10">
+          <div className="flex items-center py-4 px-10 md:flex-col">
             <img
               src={ceoAvatar}
               alt="Ceo Avatar"

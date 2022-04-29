@@ -44,7 +44,7 @@
     @apply py-[60px] px-28;
   }
   .card {
-    @apply w-96 drop-shadow-md rounded-md p-4 m-8 bg-white;
+    @apply w-full h-auto drop-shadow-md rounded-md p-4 m-8 bg-white;
   }
 }
 

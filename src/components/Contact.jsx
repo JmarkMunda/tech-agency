@@ -5,11 +5,11 @@ import { FaViber, FaLinkedin, FaTelegram } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <div id="contact" className="h-screen">
+    <div id="contact" className="h-screen mb-20">
       {/* ---------- upper background ----------- */}
-      <div className="py-24 px-28 sm:p-16  h-[50vh] flex flex-col items-center bg-slate-100 p-6 relative">
+      <div className="py-20 px-28 sm:p-16 h-[50vh] flex flex-col items-center bg-slate-100 p-6 relative">
         <h1 className="text-center">Get In Touch</h1>
-        <p className="my-6 text-slate-400">
+        <p className="my-6 text-slate-400 text-center">
           Any questions or want to talk? Just write us a message!
         </p>
         {/* ------------------ Form ------------------ */}
@@ -21,8 +21,7 @@ const Contact = () => {
               <p className="font-bold">Talk to us</p>
             </div>
             <p className="text-center mb-4 text-sm">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores a
-              esse adipisci, autem veniam voluptatibus.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </p>
             <p className="text-center mb-4 text-slate-400">+639560561453</p>
             <p className="text-center mb-8 text-slate-400">+639221135497</p>

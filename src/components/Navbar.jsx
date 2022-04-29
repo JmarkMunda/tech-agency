@@ -16,8 +16,8 @@ const Navbar = () => {
     <div
       className={
         !navScroll
-          ? "sticky top-0 left-0 z-10 bg-white mt-16 px-28 sm:px-16 sm:py-2"
-          : "sticky top-0 left-0 z-10 bg-white mt-16 px-28 sm:px-16 sm:py-2 drop-shadow-lg"
+          ? "sticky top-0 left-0 z-10 bg-white mt-16 px-28 sm:px-16 "
+          : "sticky top-0 left-0 z-10 bg-white mt-16 px-28 sm:px-16  drop-shadow-lg"
       }>
       <nav className="h-16 flex justify-between items-center ">
         <h1 className="mx-5 font-bold drop-shadow-md text-xl">Tech Agency</h1>
@@ -43,12 +43,12 @@ const Navbar = () => {
 
         {!toggleMenu ? (
           <ImMenu
-            className="hidden md:block w-5 cursor-pointer absolute top-8 right-16 z-10"
+            className="hidden md:block w-5 cursor-pointer absolute top-6 right-16 z-10"
             onClick={() => setToggleMenu(!toggleMenu)}
           />
         ) : (
           <ImCross
-            className="hidden md:block w-5 cursor-pointer absolute top-8 right-16 z-10"
+            className="hidden md:block w-5 cursor-pointer absolute top-6 right-16 z-10"
             onClick={() => setToggleMenu(!toggleMenu)}
           />
         )}
