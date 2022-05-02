@@ -3,7 +3,7 @@ import teamPhoto from "../assets/img/aboutus.jpg";
 
 const About = () => {
   return (
-    <div id="aboutus" className="container md:p-16">
+    <div id="aboutus" className="container md:p-8">
       <h1 className="my-16">
         <span className="bg-slate-100">About Us</span>
       </h1>

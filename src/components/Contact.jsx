@@ -1,11 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import { BsTelephoneFill } from "react-icons/bs";
 import { AiFillMessage } from "react-icons/ai";
 import { FaViber, FaLinkedin, FaTelegram } from "react-icons/fa";
 
 const Contact = () => {
+  const [inputName, setInputName] = useState("");
+  const [inputEmail, setInputEmail] = useState("");
+  const [inputMessage, setInputMessage] = useState("");
+  const [showStatus, setShowStatus] = useState(false);
+
+  const submitHandler = (e) => {
+    e.preventDefault();
+    setShowStatus(true);
+    setTimeout(() => {
+      setShowStatus(false);
+      setInputName("");
+      setInputEmail("");
+      setInputMessage("");
+    }, 1000);
+  };
+
   return (
-    <div id="contact" className="h-screen mb-20">
+    <div id="contact" className="h-screen mb-20 relative">
       {/* ---------- upper background ----------- */}
       <div className="py-20 px-28 sm:p-16 h-[50vh] flex flex-col items-center bg-slate-100 p-6 relative">
         <h1 className="text-center">Get In Touch</h1>
@@ -41,22 +57,52 @@ const Contact = () => {
               placeholder="Name*"
               type="text"
               name="name"
-              className="border border-slate-500 rounded-md p-2 mb-4 outline-slate-700"
+              value={inputName}
+              onChange={(e) => setInputName(e.target.value)}
+              className="border border-slate-500 rounded-md px-2 py-1 mb-4 outline-slate-700"
             />
             <input
               placeholder="Email*"
               type="email"
               name="email"
-              className="border border-slate-500 rounded-md p-2 mb-4 outline-slate-700"
+              value={inputEmail}
+              onChange={(e) => setInputEmail(e.target.value)}
+              className="border border-slate-500 rounded-md px-2 py-1 mb-4 outline-slate-700"
             />
             <textarea
               placeholder="Write a message*"
               name="message"
-              className="border border-slate-500 rounded-md resize-none p-2 mb-4 outline-slate-700 h-full"
+              className="border border-slate-500 rounded-md resize-none px-2 py-1 mb-4 outline-slate-700 h-full"
+              value={inputMessage}
+              onChange={(e) => setInputMessage(e.target.value)}
             />
+            <button
+              className="cursor-pointer border-2 border-slate-500 hover:text-white hover:bg-slate-600"
+              onClick={submitHandler}>
+              Submit
+            </button>
           </form>
         </div>
       </div>
+      {inputName !== "" && inputEmail !== "" && inputMessage !== "" ? (
+        <p
+          className={
+            !showStatus
+              ? "hidden"
+              : "absolute bottom-0 w-full text-center font-bold text-green-500"
+          }>
+          Message sent successfully!
+        </p>
+      ) : (
+        <p
+          className={
+            !showStatus
+              ? "hidden"
+              : "absolute bottom-0 w-full text-center font-bold text-red-500"
+          }>
+          Input fields must not be empty!
+        </p>
+      )}
     </div>
   );
 };

@@ -61,7 +61,7 @@ const Navbar = () => {
               : " bg-white absolute drop-shadow-md top-0 left-0 w-full h-screen flex flex-col justify-evenly items-center py-4"
           }>
           <li className="my-4" onClick={() => setToggleMenu(false)}>
-            <a href="#work">Work</a>
+            <a href="#works">Work</a>
           </li>
           <li className="my-4" onClick={() => setToggleMenu(false)}>
             <a href="#services">Services</a>

@@ -4,7 +4,7 @@ import { BsGithub, BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
 const Footer = () => {
   return (
     <div className="bg-slate-500">
-      <div className="container sm:p-8 flex justify-end lg:flex-col">
+      <div className="container sm:p-8 flex justify-end md:justify-center">
         {/* -------------------Left--------------- */}
         <div>
           <div className="flex mb-2">
@@ -20,7 +20,7 @@ const Footer = () => {
         </div>
         {/* --------------- Right ------------- */}
 
-        <div className="ml-24 lg:ml-0 border-l-2 border-gray-400 pl-8 lg:border-none">
+        <div className="ml-24 lg:ml-6 md:hidden border-l-2 border-gray-400 pl-8 lg:border-none ">
           <p className="text-gray-400 my-4">Resources</p>
           <ul>
             <li className="text-gray-400">Docs</li>
@@ -29,7 +29,7 @@ const Footer = () => {
             <li className="text-gray-400">References</li>
           </ul>
         </div>
-        <div className="ml-24 lg:ml-0">
+        <div className="ml-24 lg:ml-6 md:hidden">
           <p className="text-gray-400 my-4">Pricing</p>
           <ul>
             <li className="text-gray-400">Pricing Overview</li>
@@ -40,14 +40,14 @@ const Footer = () => {
             <li className="text-gray-400">Personal</li>
           </ul>
         </div>
-        <div className="ml-24 lg:ml-0">
+        <div className="ml-24 lg:ml-6 md:hidden">
           <p className="text-gray-400 my-4">Developers</p>
           <ul>
             <li className="text-gray-400">Jay Mark Munda</li>
             <li className="text-gray-400">Jo Ann Mercado</li>
           </ul>
         </div>
-        <div className="ml-24 lg:ml-0">
+        <div className="ml-24 lg:ml-6 md:hidden">
           <p className="text-gray-400 my-4">Company</p>
           <ul>
             <li className="text-gray-400">About Us</li>
