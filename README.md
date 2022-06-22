@@ -5,3 +5,4 @@ This project was created using React JS and Tailwind CSS
 
 - responsive design
 - simple and minimalist design
+- [ ... ]
